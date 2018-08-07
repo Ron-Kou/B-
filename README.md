@@ -1,4 +1,21 @@
 # B站弹幕抓取
-原理很简单。B站视频弹幕储存在一个XML文件里，而XML文件在网页源码里有。。
-输入视频AV号即可抓取所有弹幕。
-Enjoy it:)
+forked from 
+https://github.com/chennanxu/B-
+
+目标：
+通过遍历B站指定范围的AV号提取弹幕关键词
+结果：
+[
+    {
+        关键字:xxx,
+        data:[
+            {
+                AV号:xxx,
+                弹幕出现时间:xxx
+            }
+        ...
+        ]
+    }
+]
+
+developing continuly...
