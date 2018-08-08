@@ -40,11 +40,12 @@ if __name__ == '__main__':
 
     dir = os.getcwd() + '/resources/danmu/all/'
     for file in os.listdir(dir):
-        name_id = int(file.split('-')[1].split('.')[0])
-        if start <= name_id <= end:
-            os.remove(dir+file)
-            print(file + " deleted")
-    print('cleaned xml finished.')
+        print(str(file) + " deleted")
+        if file.split('.')[1] == 'xml':
+            print(True)
+        else:
+            print(False)
+
 
 
 
